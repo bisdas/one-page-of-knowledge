@@ -1,4 +1,4 @@
-**Programming Best Practices: **
+## Programming Best Practices:
 
 1. Keep components small. This way they are more testable. Easy to find a problem, and fix the problem without affecting other areas of the code base. 
 2. Prefer make component dynamic and reusable using props.
@@ -10,7 +10,7 @@
 8. Keep environment configuration in separate config files. 
 9. Use flags to easily enable or disable feature
 10. Make the code readable - function names, variable names, file names
-11. Keep component artifacts - styles, utils, helper functions etc. in single folder. 
+11. Keep component artifacts - styles, utils, helper functions etc. in single folder. This way they are independent, reusable, and easily movable.
 12. Always get code reviewed by other engineers. This opens up more perspective and ideas to problem solving and better solutions.
 13. When using GraphQL services - prefer to use fragments. 
 14. Apply design patterns wherever possible. 
@@ -20,3 +20,4 @@
 18. Apply lazy loading wherever possible
 19. Optimise code for performance and smaller bundle size. 
 20. Apply debouncing and throttling for time consuming operations.
+21. Use local variables, not global variables  - if this variable is no use to other functions. A globally created variable will last longer in memory and overall the code will need more space. On the contrary, a locallized variable gets destroyed when the function execution is complete.
