@@ -1,1 +1,1 @@
-# one-page-of-knowledge
+# Something to learn from each page
