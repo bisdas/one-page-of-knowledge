@@ -1,14 +1,7 @@
 const getFileSizeFromURL = (url) => {
     return new Promise((resolve, reject) => {
         try {
-            const options = {
-                headers: {
-                    'Content-Type': 'image/png',
-                    Accept: 'image/png',
-                }
-            };
-
-            fetch(url, options)
+            fetch(url)
                 .then((response) => response.blob())
                 .then((blob) => {
                     const reader = new FileReader();
