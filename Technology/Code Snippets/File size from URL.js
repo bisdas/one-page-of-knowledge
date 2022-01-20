@@ -7,7 +7,7 @@ const getFileSizeFromURL = (url) => {
                     const reader = new FileReader();
                     reader.onloadend = () => {
                         const sizeInKb = // call a method that returns file size from base 64 string
-                        // reference: https://github.com/bisdas/one-page-of-knowledge/blob/d201879d9d9f8c3ac599c378ef82ba11e7d2b6c8/Technology/Code%20Snippets/Get%20Image%20file%20size%20from%20Base%2064%20data%20string.js
+                        // reference: https://github.com/bisdas/one-page-of-knowledge/blob/38fb450f30893e85a937cc34b90ef97b2f9b3ed1/Technology/Code%20Snippets/File%20size%20from%20Base64.js
 
                         resolve({ fileSize: sizeInKb });
                     };
